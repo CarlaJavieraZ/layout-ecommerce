@@ -1,0 +1,130 @@
+body {
+    font-family: "roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 225, 230);
+}
+
+h1 {
+    color: white;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "nav nav"
+        "aside main"
+        "footer footer";
+    grid-template-columns: 14em 1fr;
+    grid-template-rows: auto 1fr auto;
+    color: rgb(41, 41, 41);
+    min-height: 100vh;
+
+}
+
+nav {
+    grid-area: nav;
+    background-color: #e7b2cb;
+    padding: 5px;
+    text-align: center;
+    margin: 0;
+}
+
+aside {
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    background-color:#f5cadc9d; 
+    padding: 20px;
+    border-top-right-radius:15px;
+    border-bottom-right-radius:15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+aside h2 {
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    color: #ffffff;
+
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+aside ul li {
+    background-color: #fff0f6;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 10px;
+    color: #5c2a52;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+aside ul li i {
+    color: #d63384;
+}
+
+aside ul li:hover {
+    background-color: #ffd6e6;
+    cursor: pointer;
+}
+
+main {
+    grid-area: main;
+    padding: 1rem;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    padding: 1rem;
+    background-color: #e7b2cb;
+  }
+
+.grid-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fafafa;
+    border: 1px solid #9c7d86;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.card img {
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.cta-btn {
+margin-top: 0.5rem;
+text-decoration: none;
+background-color: #ff98a8;
+color: white;
+padding: 0.5rem 1rem;
+border-radius: 4px; 
+}
+
+.cta-btn:hover {
+    background-color: #ff6f91; 
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
